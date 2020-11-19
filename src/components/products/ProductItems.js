@@ -1,31 +1,31 @@
 export default function ProductItems(props) {
-  const product = props
+  const product = props;
 
   return (
-    <div className='col-md-3 cold-sm-6'>
+    <div className="col-md-3 cold-sm-6">
       <span>
         <img
-          className='img-fluid img-thumbnail'
+          className="img-fluid img-thumbnail"
           alt={product.name}
           src={product.image}
           value={product.price}
-          onClick={(event) => product.onAddOrder(product)}
+          onClick={() => product.onAddOrder(product)}
         />
       </span>
-      <span className='d-flex justify-content-between p-1'>
-        <h5>{product.name}</h5>
-        <h6 className='text-danger font-weight-bold'>{product.price} THB.</h6>
+      <span className="d-flex justify-content-between p-1">
+        <h6>{product.name}</h6>
+        <h6 className="text-danger font-weight-bold">{product.price} THB.</h6>
       </span>
       <span>
         <button
-          className='btn btn-block btn-info'
+          className="btn btn-block btn-info"
           value={product.price}
-          onClick={(event) => product.onAddOrder(product)}
+          onClick={() => product.onAddOrder(product)}
         >
           Add
         </button>
       </span>
       <hr />
     </div>
-  )
+  );
 }
