@@ -16,7 +16,7 @@ export default function Order() {
   const [orders, setOrders] = useState(null)
 
   useEffect(() => {
-    axios.get('http://localhost:3030/orders').then((res) => setOrders(res.data))
+    axios.get(`http://localhost:3030/orders`).then((res) => setOrders(res.data))
   }, [])
 
   //this function, idk why doesn't it work when i call in <div>{showOrders()}</div>
@@ -26,6 +26,14 @@ export default function Order() {
   //       return <li key={key}>{order.id}</li>
   //     })
   // }
+
+  function finishOrder(order) {
+    axios.delete(`http://localhost:3030/orders/${order.id}`).then(() => {
+      axios
+        .get(`http://localhost:3030/orders`)
+        .then((res) => setOrders(res.data))
+    })
+  }
 
   return (
     <div>
@@ -46,19 +54,22 @@ export default function Order() {
                         {date.toLocaleTimeString()}
                       </CardSubtitle>
                       <CardText>
-                        {order.orders.map((record) => {
+                        {order.orders.map((record, key) => {
                           return (
-                            <ul style={{ listStyleType: 'none' }}>
-                              <li>
-                                {record.product.name} | {record.quantity}
-                              </li>
-                            </ul>
+                            <li key={key} className="list-unstyled">
+                              {record.product.name} x {record.quantity}
+                            </li>
                           )
                         })}
                       </CardText>
                       <div className="d-flex justify-content-end">
-                        <Button className="btn btn-success mr-3">O</Button>
-                        <Button className="btn btn-danger">X</Button>
+                        <Button
+                          className="btn btn-success mr-3"
+                          onClick={() => finishOrder(order)}
+                        >
+                          O
+                        </Button>
+                        {/* <Button className="btn btn-danger">X</Button> */}
                       </div>
                     </CardBody>
                   </Card>

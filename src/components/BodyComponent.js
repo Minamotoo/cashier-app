@@ -14,7 +14,7 @@ export default function BodyComponent() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3030/products')
+      .get(`http://localhost:3030/products`)
       .then((res) => setProducts(res.data))
   }, [])
 
@@ -50,7 +50,7 @@ export default function BodyComponent() {
   function confirmOrder() {
     if (orders.length !== 0) {
       axios
-        .post('http://localhost:3030/orders', {
+        .post(`http://localhost:3030/orders`, {
           orders,
           totalPrice,
           date: new Date(),
