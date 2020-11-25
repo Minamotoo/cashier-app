@@ -29,6 +29,12 @@
       "name": "เค้ก",
       "price": "200",
       "image": "/images/products/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "กาแฟ",
+      "price": "140",
+      "image": "/images/products/6.jpg"
     }
   ],
   "orders": [
@@ -70,11 +76,75 @@
           },
           "price": 280,
           "quantity": 2
+        },
+        {
+          "product": {
+            "id": 3,
+            "name": "บิงซู",
+            "price": "200",
+            "image": "/images/products/3.jpg"
+          },
+          "price": 200,
+          "quantity": 1
         }
       ],
-      "totalPrice": 280,
-      "date": "2020-11-16T02:05:12.908Z",
-      "id": 14
+      "totalPrice": 480,
+      "date": "2020-11-25T12:55:37.079Z",
+      "id": 16
+    },
+    {
+      "orders": [
+        {
+          "product": {
+            "id": 6,
+            "name": "กาแฟ",
+            "price": "140",
+            "image": "/images/products/6.jpg"
+          },
+          "price": 140,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 140,
+      "date": "2020-11-25T12:55:48.461Z",
+      "id": 17
+    },
+    {
+      "orders": [
+        {
+          "product": {
+            "id": 3,
+            "name": "บิงซู",
+            "price": "200",
+            "image": "/images/products/3.jpg"
+          },
+          "price": 400,
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": 4,
+            "name": "เฟรนช์ฟราย",
+            "price": "140",
+            "image": "/images/products/4.jpg"
+          },
+          "price": 140,
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 6,
+            "name": "กาแฟ",
+            "price": "140",
+            "image": "/images/products/6.jpg"
+          },
+          "price": 140,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 680,
+      "date": "2020-11-25T13:47:34.311Z",
+      "id": 18
     }
   ]
 }

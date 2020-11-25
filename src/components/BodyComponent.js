@@ -19,6 +19,7 @@ export default function BodyComponent() {
   }, [])
 
   function addOrder(product) {
+    console.log(product)
     let isOrderExist = orders.find((order) => order.product.id === product.id)
     if (isOrderExist) {
       isOrderExist.quantity++

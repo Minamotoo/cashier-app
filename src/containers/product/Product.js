@@ -10,10 +10,14 @@ export default function Product() {
   const [products, setProducts] = useState(null)
 
   useEffect(() => {
+    getProducts()
+  }, [])
+
+  async function getProducts() {
     axios
       .get(`http://localhost:3030/products`)
       .then((res) => setProducts(res.data))
-  }, [])
+  }
 
   function deleteProduct(product) {
     Swal.fire({

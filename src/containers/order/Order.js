@@ -64,7 +64,7 @@ export default function Order() {
                         })}
                       </CardText>
                       <p className="font-weight-bold text-warning">
-                        Total Price: {order.totalPrice} THB.
+                        Total Price: {order.totalPrice.toLocaleString()} THB.
                       </p>
                       <hr />
                       <div className="d-flex justify-content-end">

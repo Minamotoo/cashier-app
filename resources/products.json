@@ -1,38 +1,38 @@
 [
   {
-    "productID": 1,
-    "productName": "สลัดผัก",
-    "unitPrice": "120",
+    "id": 1,
+    "name": "สลัดผัก",
+    "price": "120",
     "image": "/images/products/1.jpg"
   },
   {
-    "productID": 1,
-    "productName": "ไก่ทอด",
-    "unitPrice": "90",
+    "id": 2,
+    "name": "ไก่ทอด",
+    "price": "90",
     "image": "/images/products/2.jpg"
   },
   {
-    "productID": 1,
-    "productName": "บิงซู",
-    "unitPrice": "200",
+    "id": 3,
+    "name": "บิงซู",
+    "price": "200",
     "image": "/images/products/3.jpg"
   },
   {
-    "productID": 1,
-    "productName": "เฟรนช์ฟราย",
-    "unitPrice": "140",
+    "id": 4,
+    "name": "เฟรนช์ฟราย",
+    "price": "140",
     "image": "/images/products/4.jpg"
   },
   {
-    "productID": 1,
-    "productName": "เค้ก",
-    "unitPrice": "200",
+    "id": 5,
+    "name": "เค้ก",
+    "price": "200",
     "image": "/images/products/5.jpg"
   },
   {
-    "productID": 1,
-    "productName": "กาแฟ",
-    "unitPrice": "140",
+    "id": 6,
+    "name": "กาแฟ",
+    "price": "140",
     "image": "/images/products/6.jpg"
   }
 ]
