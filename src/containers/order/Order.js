@@ -53,6 +53,7 @@ export default function Order() {
                         {date.toLocaleDateString()} |{' '}
                         {date.toLocaleTimeString()}
                       </CardSubtitle>
+                      <hr />
                       <CardText>
                         {order.orders.map((record, key) => {
                           return (
@@ -62,12 +63,16 @@ export default function Order() {
                           )
                         })}
                       </CardText>
+                      <p className="font-weight-bold text-warning">
+                        Total Price: {order.totalPrice} THB.
+                      </p>
+                      <hr />
                       <div className="d-flex justify-content-end">
                         <Button
-                          className="btn btn-success mr-3"
+                          className="btn btn-success"
                           onClick={() => finishOrder(order)}
                         >
-                          O
+                          Finish
                         </Button>
                         {/* <Button className="btn btn-danger">X</Button> */}
                       </div>

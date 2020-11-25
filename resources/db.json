@@ -29,12 +29,6 @@
       "name": "เค้ก",
       "price": "200",
       "image": "/images/products/5.jpg"
-    },
-    {
-      "id": 6,
-      "name": "กาแฟ",
-      "price": "140",
-      "image": "/images/products/6.jpg"
     }
   ],
   "orders": [
